@@ -1,0 +1,10 @@
+server:
+  port: 8083
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/payment_db
+  kafka:
+    consumer:
+      group-id: payment-service-group
+#      properties:
+#        spring.json.value.default.type: org.example.paymentservice.dto.OrderDto

@@ -1,0 +1,10 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/notification_db
+  kafka:
+    consumer:
+      group-id: notification-service-group
+#      properties:
+#        spring.json.value.default.type: org.example.notificationservice.dto.OrderDto

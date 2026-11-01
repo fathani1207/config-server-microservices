@@ -1,0 +1,10 @@
+server:
+  port: 8084
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/inventory_db
+  kafka:
+    consumer:
+      group-id: inventory-service-group
+#      properties:
+#        spring.json.value.default.type: org.example.inventoryservice.dto.OrderDto
