@@ -37,6 +37,11 @@ spring:
       ack-mode: record
       concurrency: 3
       missing-topics-fatal: false
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${KEYCLOAK_ISSUER_URI:http://localhost:8180/realms/shop}
 
 eureka:
   client:
