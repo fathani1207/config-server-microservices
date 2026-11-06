@@ -6,5 +6,5 @@ spring:
   kafka:
     consumer:
       group-id: inventory-service-group
-#      properties:
-#        spring.json.value.default.type: org.example.inventoryservice.dto.OrderDto
+      properties:
+        spring.json.value.default.type: org.example.inventoryservice.dto.OrderCreatedEvent
