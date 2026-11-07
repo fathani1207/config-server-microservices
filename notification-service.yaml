@@ -6,6 +6,12 @@ spring:
   kafka:
     consumer:
       group-id: notification-service-group
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+    encoding: UTF-8
+    cache: false
   mail:
     host: ${EMAIL_HOST}
     port: ${EMAIL_PORT}
